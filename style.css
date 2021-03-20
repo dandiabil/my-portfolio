@@ -11,20 +11,6 @@ body {
   color: black;
 }
 
-html, body{
-  overflow: hidden;
-}
-
-.parent{
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-.home, .profile, .work, .social{
-  scroll-snap-align: start;
-}
-
 .bg{
   background: url(img/seyi-ariyo-g42A22TR8k8-unsplash.jpg);
   background-repeat: no-repeat;
@@ -33,7 +19,7 @@ html, body{
 }
 
 header{
-  height: 100px;
+  height: 10vh;
   width: 484px;
   margin: 0 auto;
 }
@@ -53,6 +39,7 @@ header nav ul{
 header nav ul li a{
   text-decoration: none;
   color: whitesmoke;
+  display: inline-block;
 }
 
 header nav ul li{
@@ -65,12 +52,17 @@ header nav ul li{
   height: auto;
 }
 
-.container-profile{
+.container, .profile, .work, .social{
   height: 90vh;
 }
 
-.logo img{
-  position: relative;
+img.logo:hover{
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.container figure{
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -78,30 +70,12 @@ header nav ul li{
 
 .logo{
   opacity: 1;
-  height: 100%;
-  transition: 3s opacity;
+  transition: 3s opacity, .7s transform;
 }
 
 .fade{
   opacity: 0;
-}
-
-.profile{
-  height: 100vh;
-  background-image: url(img/shifaaz-shamoon-9K9ipjhDdks-unsplash-edited.jpg);
-  background-size: 100%;
-  background-position: center;
-}
-
-.card{
-  width: 880px;
-  height: 587px;
-  background: rgba(0, 16, 27, 0.62);
-  border: 5px solid #0b1f2b;
-  border-radius: 47px;
-  position: relative;
-  top: 22vh;
-  left: 10vw;
+  transition: 3s opacity;
 }
 
 section.atas{
@@ -115,32 +89,22 @@ section.atas{
   margin: 50px;
 }
 
-section.atas p{
+.container-profile p.name{
   font-size: 36px;
   color: #C0C0C0;
 }
 
-section.bawah p{
+.container-profile p{
   font-family: 'Raleway', sans-serif;
   color: #C0C0C0;
-  text-align: center;
-  margin: 20px 50px;
+  padding: 20px 50px;
   font-size: 24px;
-}
-
-.work{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-section.kiri{
-  width: 40vw;
 }
 
 section.kiri ul li{
   list-style-type: none;
-  margin: 50px 0;
+  padding: 50px 0;
+  color: whitesmoke;
   font-size: 36px;
 }
 
@@ -148,24 +112,13 @@ section.kiri ul{
   text-align: center;
 }
 
-section.kanan{
-  background-color: gray;
-  width: 100%;
-  height: 100%;
-}
-
-.social{
-  height: 100vh;
-  background-color: #191919;
-}
-
 .container-social{
-  width: 1140px;
-  height: 670px;
+  width: 50%;
+  height: 60%;
   position: relative;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
   border: 2px solid #FFFF;
   border-radius: 15px;
 }
@@ -190,65 +143,18 @@ section.kanan{
   font-family: 'Inder', sans-serif;
 }
 
-.btn-up{
-  width: 50px;
-  height: 50px;
-  right: 5%;
-  bottom: 5%;
-  border-radius: 50%;
-  position: fixed;
-  background-color: #1E1E1E;
-  transition: .5s opacity;
-}
-
-.btn-up:hover{
-  cursor: pointer;
-}
-
-.up{
-  padding: 0;
-  margin: 5px auto;
-  width: 100%;
-  display: inline-block;
-}
-
-/* .logo p {
-  color: black;
-  text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-     1px 1px 0 #fff;
-  font-size: 180px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.menu ul{
-  display: flex;
-  height: 100%;
-  margin-top: 25px;
-}
-
-.profile-menu, .work-menu, .social-menu{
-  font-weight: bolder;
-  font-size: 30px;
-  cursor: pointer;
-  text-shadow: 3px 2px 1px grey;
-  transition: 0.25s;
-}
-
-
-.content{
-  margin: 20px;
-}
-
-.hide{
+.hidden{
   display: none;
 }
 
-footer{
-  height: 200px;
-}
-
-*/
+/* .card{
+  width: 880px;
+  height: 587px;
+  background: rgba(0, 16, 27, 0.62);
+  border: 5px solid #0b1f2b;
+  border-radius: 47px;
+  position: relative;
+  top: 22vh;
+  left: 10vw;
+  transition: .5s;
+} */

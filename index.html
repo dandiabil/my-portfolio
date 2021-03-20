@@ -8,41 +8,34 @@
 </head>
 
 <body>
-    <main class="parent">
-        <div class="home bg">
-            <header>
-                <nav>
-                    <ul>
-                        <li class="profile-menu"><a href="#profile">PROFILE</a></li>
-                        <li class="work-menu"><a href="#work">WORK</a></li>
-                        <li class="social-menu"><a href="#social">SOCIAL</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <main class="parent bg">
+        <header>
+            <nav>
+                <ul>
+                    <li class="profile-menu"><a href="#">PROFILE</a></li>
+                    <li class="work-menu"><a href="#">WORK</a></li>
+                    <li class="social-menu"><a href="#">SOCIAL</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="container-profile">
-                <figure class="logo fade">
-                    <img src="img/hello world.png" alt="hello-world-logo">
+        <div class="home">
+            <div class="container">
+                <figure>
+                    <img src="img/hello world.png" alt="hello-world-logo" class="logo fade">
                 </figure>
             </div>
         </div>
 
-        <article class="profile" id="profile">
-            <div class="card">
-                <section class="atas">
-                    <!-- <figure><img src="" alt=""></figure> -->
-                    <figure><span class="iconify" data-inline="false" data-icon="gg:profile"
-                            style="font-size: 10em;"></span></figure>
-                    <p>Dandi Sabilli Izzulhaq</p>
-                </section>
-                <section class="bawah">
-                    <p>My name is Dandi Sabilli Izzulhaq. You can call me Dan. I'm currently a Mercu Buana University
-                        college student majoring in Information System.</p>
-                </section>
+        <article class="profile hidden" id="profile">
+            <div class="container-profile">
+                <p class="name">Dandi Sabilli Izzulhaq</p>
+                <p>My name is Dandi Sabilli Izzulhaq. You can call me Dan. I'm currently a Mercu Buana University
+                    college student majoring in Information System.</p>
             </div>
         </article>
 
-        <article class="work" id="work">
+        <article class="work hidden" id="work">
             <section class="kiri">
                 <ul>
                     <li>Blender</li>
@@ -50,12 +43,9 @@
                     <li>Desktop</li>
                 </ul>
             </section>
-            <section class="kanan gradient">
-
-            </section>
         </article>
 
-        <article class="social" id="social">
+        <article class="social hidden" id="social">
             <div class="container-social">
                 <ul>
                     <li>
@@ -71,13 +61,7 @@
                 </ul>
             </div>
         </article>
-
     </main>
-
-    <div class="btn-up fade">
-        <span class="iconify up" data-icon="akar-icons:chevron-up" data-inline="false"
-            style="font-size: 2em; color:white;"></span>
-    </div>
 
     <script src="script.js"></script>
 </body>
