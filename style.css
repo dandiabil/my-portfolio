@@ -1,160 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Inder&family=Raleway&display=swap');
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-}
-
-.bg{
-  background: url(img/seyi-ariyo-g42A22TR8k8-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-
-header{
-  height: 10vh;
-  width: 484px;
-  margin: 0 auto;
-}
-
-nav{
-  height: 100%;
-  width: auto;
-  align-items: center;
-}
-
-header nav ul{
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
-
-header nav ul li a{
-  text-decoration: none;
-  color: whitesmoke;
-  display: inline-block;
-}
-
-header nav ul li{
-  list-style-type: none;
-  align-self: center;
-}
-
-.work img{
-  width: 250px;
-  height: auto;
-}
-
-.container, .profile, .work, .social{
-  height: 90vh;
-}
-
-img.logo:hover{
-  transform: scale(1.1);
-  transition: .5s;
-}
-
-.container figure{
+.banner::before {
+  content: "";
+  width: 200px;
+  height: 224px;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 140px;
+  left: -202px;
+  background: linear-gradient(215deg, #111111 21%, #222222 84.63%);
+  -webkit-transform: skewY(-55deg);
+  -webkit-transform-origin: top;
+
+  -moz-transform: skewY(-55deg);
+  -moz-transform-origin: top;
+
+  -ms-transform: skewY(-55deg);
+  -ms-transform-origin: top;
+
+  -o-transform: skewY(-55deg);
+  -o-transform-origin: top;
+
+  transform: skewY(-55deg);
+  transform-origin: top;
 }
 
-.logo{
-  opacity: 1;
-  transition: 3s opacity, .7s transform;
-}
-
-.fade{
-  opacity: 0;
-  transition: 3s opacity;
-}
-
-section.atas{
-  display: flex;
-  align-items: center;
-  height: 50%;
-  width: 100%;
-}
-
-.iconify{
-  margin: 50px;
-}
-
-.container-profile p.name{
-  font-size: 36px;
-  color: #C0C0C0;
-}
-
-.container-profile p{
-  font-family: 'Raleway', sans-serif;
-  color: #C0C0C0;
-  padding: 20px 50px;
-  font-size: 24px;
-}
-
-section.kiri ul li{
-  list-style-type: none;
-  padding: 50px 0;
-  color: whitesmoke;
-  font-size: 36px;
-}
-
-section.kiri ul{
-  text-align: center;
-}
-
-.container-social{
-  width: 50%;
-  height: 60%;
-  position: relative;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  border: 2px solid #FFFF;
-  border-radius: 15px;
-}
-
-.container-social ul li a{
-  color: #CDCDCD;
-  font-size: 72px;
-  margin-left: -30px;
-  text-decoration: none;
-}
-
-.container-social ul li{
-  display: flex;
-  align-items: center;
-}
-
-.container-social ul{
+.banner::after {
+  content: "";
+  width: 80vw;
+  height: 120px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-60%, -50%);
-  font-family: 'Inder', sans-serif;
+  bottom: -122px;
+  left: -5px;
+  background: linear-gradient(180deg, #111111 0%, #222222 100%);
+  -webkit-transform: skew(-35deg);
+  -webkit-transform-origin: top;
+
+  -moz-transform: skew(-35deg);
+  -moz-transform-origin: top;
+
+  -ms-transform: skew(-35deg);
+  -ms-transform-origin: top;
+
+  -o-transform: skew(-35deg);
+  -o-transform-origin: top;
+
+  transform: skew(-35deg);
+  transform-origin: top;
 }
 
-.hidden{
-  display: none;
+.profile {
+  background-image: url("/assets/img/circle-bg.svg");
+  background-position: top;
 }
 
-/* .card{
-  width: 880px;
-  height: 587px;
-  background: rgba(0, 16, 27, 0.62);
-  border: 5px solid #0b1f2b;
-  border-radius: 47px;
-  position: relative;
-  top: 22vh;
-  left: 10vw;
-  transition: .5s;
-} */
+.threed-container {
+  background-color: #edf2f4;
+  height: 400px;
+  max-width: 100%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

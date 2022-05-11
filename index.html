@@ -1,97 +1,200 @@
 <!DOCTYPE html>
+<html class="scroll-smooth">
 
 <head lang="eng">
     <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <title>Dan Izzulhaq</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400;1,600&family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./index.js" type="module"></script>
 </head>
 
 <body>
-    <main class="parent bg">
-        <header>
-            <nav>
-                <ul>
-                    <li class="profile-menu"><a href="#">PROFILE</a></li>
-                    <li class="work-menu"><a href="#">WORK</a></li>
-                    <li class="social-menu"><a href="#">SOCIAL</a></li>
+    <div class="bg-black">
+
+        <!-- Header Website -->
+        <header class="flex items-center justify-between h-24 w-[80vw] mx-auto mb-5">
+            <figure>
+                <img src="/assets/img/Dan-Izzulhaq-Logo.svg" alt="portfolio logo">
+            </figure>
+            <nav class="font-cabin text-xl text-white">
+                <ul class="flex gap-16">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div class="home">
-            <div class="container">
-                <figure>
-                    <img src="img/hello world.png" alt="hello-world-logo" class="logo fade">
-                </figure>
+        <!-- Hero -->
+        <section class="relative z-10 pt-8">
+            <div class="w-[80vw] mx-auto bg-black">
+                <div class="profile w-[700px] mx-auto text-center text-grey h-[350px] font-krona">
+                    <div class="flex flex-col justify-evenly items-center h-full pt-12">
+                        <h1 class="text-4xl">YOUR FRIENDLY.</h1>
+                        <h1 class="text-5xl">NEIGHBORHOOD.</h1>
+                        <h1 class="text-6xl">CODER.</h1>
+                    </div>
+                </div>
+                <div class="banner flex text-white p-6 border-grey border-2 bg-black relative z-10">
+                    <div class="w-1/2">
+                        <div class="font-krona text-6xl mb-5">
+                            <h1>DANDI</h1>
+                            <h1 class="text-red">IZZULHAQ</h1>
+                        </div>
+                        <div class="font-cabin text-2xl italic">
+                            <h2>Front End Developer</h2>
+                        </div>
+                    </div>
+                    <div class="w-1/2 flex justify-between flex-col">
+                        <div class="font-montserrat">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris ligula dui volutpat
+                                auctor
+                                consequat est lacus volutpat. Vitae pellentesque nibh ligula ultrices lorem tristique
+                                vitae
+                                mattis dictum. Etiam eu quam senectus nunc massa habitasse.</p>
+                        </div>
+                        <div class="font-cabin font-semibold">
+                            <button class="px-5 py-3 rounded-md bg-red text-white mr-5 border-[1px] border-red">
+                                Get In Touch
+                                <span class="iconify inline-block text-xl -mt-1 ml-1"
+                                    data-icon="charm:mail"></span></button>
+                            <button class="px-5 py-3 rounded-md border-[1px] border-white">Download CV <span
+                                    class="iconify inline-block text-xl -mt-1 ml-1"
+                                    data-icon="ant-design:download-outlined"></span></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="h-[100px]"></div>
+        </section>
 
-        <article class="profile hidden" id="profile">
-            <div class="container-profile">
-                <p class="name">Dandi Sabilli Izzulhaq</p>
-                <p>My name is Dandi Sabilli Izzulhaq. You can call me Dan. I'm currently a Mercu Buana University
-                    college student majoring in Information System.</p>
+
+        <!-- About Section -->
+        <section class="bg-white relative z-10">
+            <div class="w-[80vw] mx-auto py-14 flex items-center justify-between">
+                <div class="w-2/3">
+                    <div class="mb-3">
+                        <h1 class="font-krona text-5xl">ABOUT</h1>
+                    </div>
+                    <div class="font-montserrat text-lg">
+                        <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam
+                            dolorum
+                            reprehenderit,
+                            optio,
+                            sed repellendus nesciunt magnam deserunt ut aut quis aperiam odit temporibus ducimus
+                            accusantium
+                            debitis. Voluptatem, suscipit commodi modi nulla tenetur maxime fugit? Eos adipisci
+                            similique
+                            quisquam
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis harum accusantium
+                            accusamus
+                            officiis vitae, iure molestias. Fugiat, nulla sint?
+                            sed repellendus nesciunt magnam deserunt ut aut quis aperiam odit temporibus ducimus
+                            accusantium
+                            debitis.</p>
+                    </div>
+                </div>
+                <div class="mx-auto">
+                    <figure class="w-fit mx-auto">
+                        <img src="/assets/img/profile-photo.png" alt="profile-photo" class="h-[350px]">
+                    </figure>
+                </div>
             </div>
-        </article>
+        </section>
 
-        <article class="work hidden" id="work">
-            <section class="kiri">
-                <ul>
-                    <li>Blender</li>
-                    <li>UI</li>
-                    <li>Desktop</li>
-                </ul>
-            </section>
-        </article>
-
-        <article class="social hidden" id="social">
-            <div class="container-social">
-                <ul>
-                    <li>
-                        <span class="iconify" data-inline="false" data-icon="akar-icons:github-fill"
-                            style="font-size: 5em; color: white;"></span>
-                        <a href="https://github.com/dandiabil" target="_blank">/dandiabil</a>
-                    </li>
-                    <li>
-                        <span class="iconify" data-inline="false" data-icon="akar-icons:instagram-fill"
-                            style="font-size: 5em; color: white;"></span>
-                        <a href="https://instagram.com/dandiabil" target="_blank">/dandiabil</a>
-                    </li>
-                </ul>
+        <!-- Projects Section -->
+        <section class="bg-white">
+            <div class="py-14 text-white bg-black">
+                <div class="w-[80vw] mx-auto mb-16">
+                    <h1 class="font-krona text-5xl text-right">PROJECTS</h1>
+                </div>
+                <div class="grid grid-cols-2 font-montserrat">
+                    <div class="threed-container">
+                        <div class="display"></div>
+                    </div>
+                    <div class="">
+                        <h2 class="text-8xl font-cabin">InvestX</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita maxime
+                            laudantium iusto eveniet nam aliquid nobis hic sit earum amet animi odio sed, et
+                            consequuntur modi inventore similique. Quasi?</p>
+                    </div>
+                    <div>
+                        <h2 class="text-8xl font-cabin">InvestX</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita maxime
+                            laudantium iusto eveniet nam aliquid nobis hic sit earum amet animi odio sed, et
+                            consequuntur modi inventore similique. Quasi?</p>
+                    </div>
+                    <div class="threed-container">
+                        <div class="display"></div>
+                    </div>
+                    <div class="threed-container">
+                        <div class="display"></div>
+                    </div>
+                    <div>
+                        <h2 class="text-8xl font-cabin">InvestX</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cumque cupiditate
+                            exercitationem porro, magnam error, deleniti quasi ipsum vel dicta, expedita blanditiis!
+                            Laborum vero ullam tenetur earum velit ipsa illum.</p>
+                    </div>
+                </div>
             </div>
-        </article>
-    </main>
+            <img src="/assets/img/section-divider.svg" alt="" class="w-full">
+        </section>
 
-    <script src="script.js"></script>
+        <!-- Contact Section -->
+        <section class="bg-white relative z-10 py-8">
+            <div class="py-14 w-[40vw] mx-auto">
+                <h1 class="font-krona text-5xl text-center mb-8">CONTACT</h1>
+                <p class="font-montserrat text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+                    possimus illum
+                    sed veritatis. Repellendus ratione rem, architecto deleniti facere eius?</p>
+                <form autocomplete="false">
+                    <div class="flex gap-4 mt-5">
+                        <input type="text"
+                            class="px-3 py-2 bg-[#E0E9EC] border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 w-full rounded-md sm:text-sm focus:ring-1"
+                            placeholder="Your name">
+                        <input type="text"
+                            class="px-3 py-2 bg-[#E0E9EC] border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 w-full rounded-md sm:text-sm focus:ring-1"
+                            placeholder="Your email">
+                    </div>
+                    <textarea rows="10"
+                        class="mt-3 px-3 py-2 bg-[#E0E9EC] w-full block rounded-md border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-sm focus:ring-1 mb-3"
+                        placeholder="Your message"></textarea>
+                    <button class="px-5 py-3 rounded-md bg-red text-white mr-5 border-[1px] border-red font-cabin">Send
+                        Message
+                        <span class="iconify inline-block text-xl -mt-1 ml-1"
+                            data-icon="carbon:send-filled"></span></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="h-24 flex items-center font-cabin">
+            <div class="w-[80vw] mx-auto text-white flex items-center justify-between">
+                <h1 class="opacity-75">&copy; 2022 - Your friendly neighborhood coder.</h1>
+                <a href="#top" class="underline">Back to top</a>
+                <div>
+                    <button class="h-12 w-12 rounded-full bg-red text-white mr-5">
+                        <a href="https://twitter.com/dandiabil" target="_blank" rel="noreferrer"><span
+                                class="iconify text-xl mx-auto" data-icon="akar-icons:twitter-fill"></span></a></button>
+                    <button class="h-12 w-12 rounded-full bg-red text-white mr-5">
+                        <a href="https://linkedin.com/in/dandiabil" target="_blank" rel="noreferrer"><span
+                                class="iconify text-xl mx-auto"
+                                data-icon="akar-icons:linkedin-box-fill"></span></a></button>
+                    <button class="h-12 w-12 rounded-full bg-red text-white mr-5">
+                        <a href="https://github.com/dandiabil" target="_blank" rel="noreferrer"><span
+                                class="iconify text-xl mx-auto" data-icon="akar-icons:github-fill"></span></a> </button>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
-
-<!-- <h3>Things i'd like to do</h3>
-        <p>These are the things that i like to do when in my spare time.</p>
-        <h4>Blender</h4>
-        <p>I learned Blender for like 2 months, its not that hard actually. You just have to know certain keyboard shortcut and you will figure things out from there.</p>
-        <br />
-        
-        <section>
-            <a href="#"><img src="img/phone.png" alt="old-phone"></a>
-
-            <img src="img/phone side.png" alt="old-phone-side">
-            
-            <img src="img/city low poly.png" alt="low-poly-city">
-            
-            <img src="img/hammer.png" alt="hammer">
-
-            <img src="img/pokeball cycles.png" alt="pokeball">
-
-            <img src="./img/tree.png" alt="tree">
-        </section>
-    
-        <h4>Songs Cover</h4>
-        <p>And i also like to sing, i love to play guitar and sing. The first time i learned it was back in 2016. So i made my SoundCloud account to upload my covers. I want to make a song of my own though, but i still need a lot of experience to do that.</p> -->
-
-<!-- <li>icon <a href="https://www.soundcloud.com/dandiabil" target="_blank">SoundCloud</a> </li>
-                <li>icon <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-                <li>icon <a href="https://www.youtube.com/" target="_blank">YouTube</a> </li>
-                <li>icon <a href="https://www.vsco.co/dandiabil" target="_blank">VSCO</a></li> -->
