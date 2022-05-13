@@ -11,8 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400;1,600&family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap"
         rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
-    <script src="./threejs.js" type="module"></script>
-    <!-- <script src="./gsap.js" type="module"></script> -->
+    <script src="./gsap.js" type="module"></script>
 </head>
 
 <body>
@@ -206,7 +205,21 @@
         </section>
     </main>
 
-    <script src="/index.js"></script>
+    <script>
+        function shrinkHeader(e) {
+            const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 200,
+                headerEl = document.getElementById("header");
+
+            if (distanceY > shrinkOn) {
+                headerEl.classList.add("shrink");
+            } else {
+                headerEl.classList.remove("shrink");
+            }
+        }
+
+        window.addEventListener("scroll", shrinkHeader);
+    </script>
 </body>
 
 </html>
