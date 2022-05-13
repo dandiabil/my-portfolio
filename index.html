@@ -148,24 +148,20 @@
                         <h2 class="project-title text-4xl lg:text-8xl font-cabin font-semibold investx">InvestX</h2>
                         <p>An equity crowdfunding website</p>
                     </div>
-                    <div class="threed-container md:hidden">
-                        <div id="creaven">
-                            <figure>
-                                <img src="assets/img/Dashboard-creaven.png" alt="creaven website">
-                            </figure>
-                        </div>
+                    <div class="md:hidden" id="creaven">
+                        <figure>
+                            <img src="assets/img/Dashboard-creaven.png" alt="creaven website">
+                        </figure>
                     </div>
                     <div
                         class="md:flex flex-col items-center justify-center gap-2 lg:w-[500px] mx-auto px-6 py-12 md:p-0">
                         <h2 class="project-title text-4xl lg:text-8xl font-cabin font-semibold creaven">CREAVEN</h2>
                         <p>Helps you find the best laptop by using machine learning algorithm</p>
                     </div>
-                    <div class="hidden md:block threed-container">
-                        <div id="creaven">
-                            <figure>
-                                <img src="assets/img/Dashboard-creaven.png" alt="creaven website">
-                            </figure>
-                        </div>
+                    <div class="hidden md:block" id="creaven">
+                        <figure>
+                            <img src="assets/img/Dashboard-creaven.png" alt="creaven website">
+                        </figure>
                     </div>
 
                     <div id="weather-info">
@@ -263,6 +259,7 @@
             menu.style = '';
             if (e.dataset.icon === 'charm:menu-hamburger') {
                 menu.style.right = '0'
+                menu.style.zIndex = '999'
             }
             else {
                 menu.style.transform = 'translate(200px, 0)'

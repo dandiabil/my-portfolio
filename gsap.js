@@ -27,14 +27,14 @@ tl.from(".hero1", {
   });
 
 gsap.from("#about h1", {
-  scrollTrigger: "#projects",
+  scrollTrigger: "#about h1",
   duration: 1,
   opacity: 0,
 });
 
 gsap
   .from("#about p", {
-    scrollTrigger: "#projects",
+    scrollTrigger: "#about p",
     duration: 1,
     y: 50,
     opacity: 0,
@@ -42,7 +42,7 @@ gsap
   .delay(1);
 
 gsap.from("#projects h1", {
-  scrollTrigger: "#projects .project-title",
+  scrollTrigger: "#projects figure",
   duration: 1,
   opacity: 0,
   y: 10,
