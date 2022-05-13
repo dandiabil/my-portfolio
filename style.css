@@ -46,27 +46,10 @@
   transform-origin: top;
 }
 
-.profile {
-  background-image: url("/assets/img/circle-bg.svg");
-  background-position: top;
-}
-
-.threed-container {
-  background-color: #edf2f4;
-  min-height: 70vh;
-  max-width: 100%;
-}
-
 header.shrink {
   height: 8vh;
   background: rgba(34, 34, 34, 0.8);
   backdrop-filter: blur(4px);
-}
-
-.project-title {
-  font-size: 128px;
-  font-family: "Cabin", "sans-serif";
-  line-height: 1;
 }
 
 @tailwind base;
