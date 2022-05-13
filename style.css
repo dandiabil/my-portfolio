@@ -53,8 +53,20 @@
 
 .threed-container {
   background-color: #edf2f4;
-  height: 400px;
+  min-height: 70vh;
   max-width: 100%;
+}
+
+header.shrink {
+  height: 8vh;
+  background: rgba(34, 34, 34, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.project-title {
+  font-size: 128px;
+  font-family: "Cabin", "sans-serif";
+  line-height: 1;
 }
 
 @tailwind base;
