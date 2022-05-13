@@ -1,41 +1,39 @@
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+// Shrink Header
+function shrinkHeader(e) {
+  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    shrinkOn = 200,
+    headerEl = document.getElementById("header");
 
-const display = document.querySelector(".display");
-const width = display.parentElement.clientWidth;
-const height = display.parentElement.clientHeight;
-
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 1000);
-
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(width, height);
-display.appendChild(renderer.domElement);
-
-camera.position.z = 5;
-
-function animate() {
-  requestAnimationFrame(animate);
-  renderer.render(scene, camera);
+  if (distanceY > shrinkOn) {
+    headerEl.classList.add("shrink");
+  } else {
+    headerEl.classList.remove("shrink");
+  }
 }
-animate();
 
-function loadModel(modelUrl) {
-  const loader = new GLTFLoader();
+window.addEventListener("scroll", shrinkHeader);
 
-  loader.load(
-    modelUrl,
-    function (gltf) {
-      const model = gltf.scene;
-      model.position.set(1, 1, 0);
-      model.scale.set(0.01, 0.01, 0.01);
-      scene.add(model);
+// Submit Message
+// const form = document
+//   .getElementById("form")
+//   .addEventListener("submit", async (e) => {
+//     e.preventDefault();
+//     let senderName = document.getElementById("name").value;
+//     let senderEmail = document.getElementById("email").value;
+//     let senderMessage = document.getElementById("message").value;
 
-      animate();
-    },
-    undefined,
-    function (e) {
-      console.error(e);
-    }
-  );
-}
+//     const res = await fetch("https://formsubmit.co/dandiabil24@gmail.com", {
+//       method: "POST",
+//       body: {
+//         name: senderName,
+//         email: senderEmail,
+//         message: senderMessage,
+//       },
+//     }).then((res) => console.log(res));
+
+// console.log(res);
+
+// senderName = "";
+// senderEmail = "";
+// senderMessage = "";
+// });

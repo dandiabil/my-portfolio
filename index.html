@@ -11,34 +11,38 @@
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400;1,600&family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap"
         rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
-    <script src="./index.js" type="module"></script>
+    <script src="./threejs.js" type="module"></script>
+    <!-- <script src="./gsap.js" type="module"></script> -->
 </head>
 
 <body>
-    <div class="bg-black">
+    <main class="bg-black">
 
         <!-- Header Website -->
-        <header class="flex items-center justify-between h-24 w-[80vw] mx-auto mb-5">
-            <figure>
-                <img src="/assets/img/Dan-Izzulhaq-Logo.svg" alt="portfolio logo">
-            </figure>
-            <nav class="font-cabin text-xl text-white">
-                <ul class="flex gap-16">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <header class="fixed w-full z-[999] transition-all h-[15vh]" id="header">
+            <div class="flex items-center justify-between h-full w-[80vw] mx-auto mb-5">
+                <figure><a href="#top">
+                        <img src="/assets/img/Dan-Izzulhaq-Logo.svg" alt="portfolio logo"></a>
+                </figure>
+                <nav class="font-cabin text-xl text-white">
+                    <ul class="flex gap-16">
+                        <li class="opacity-70 hover:opacity-100 transition"><a href="#about">About</a></li>
+                        <li class="opacity-70 hover:opacity-100 transition"><a href="#projects">Projects</a></li>
+                        <li class="opacity-70 hover:opacity-100 transition"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <!-- Hero -->
-        <section class="relative z-10 pt-8">
+        <section class="relative z-10 pt-32">
             <div class="w-[80vw] mx-auto bg-black">
-                <div class="profile w-[700px] mx-auto text-center text-grey h-[350px] font-krona">
-                    <div class="flex flex-col justify-evenly items-center h-full pt-12">
-                        <h1 class="text-4xl">YOUR FRIENDLY.</h1>
-                        <h1 class="text-5xl">NEIGHBORHOOD.</h1>
-                        <h1 class="text-6xl">CODER.</h1>
+                <div class="w-[700px] mx-auto text-center text-grey h-[350px] font-krona">
+                    <img src="/assets/img/circle-bg.svg" class="absolute z-[5]">
+                    <div class="flex flex-col justify-evenly items-center h-full pt-12 z-10 relative">
+                        <h1 class="hero1 text-4xl">YOUR FRIENDLY.</h1>
+                        <h1 class="hero2 text-5xl">NEIGHBORHOOD.</h1>
+                        <h1 class="hero3 text-6xl">CODER.</h1>
                     </div>
                 </div>
                 <div class="banner flex text-white p-6 border-grey border-2 bg-black relative z-10">
@@ -60,13 +64,14 @@
                                 mattis dictum. Etiam eu quam senectus nunc massa habitasse.</p>
                         </div>
                         <div class="font-cabin font-semibold">
-                            <button class="px-5 py-3 rounded-md bg-red text-white mr-5 border-[1px] border-red">
-                                Get In Touch
-                                <span class="iconify inline-block text-xl -mt-1 ml-1"
-                                    data-icon="charm:mail"></span></button>
-                            <button class="px-5 py-3 rounded-md border-[1px] border-white">Download CV <span
-                                    class="iconify inline-block text-xl -mt-1 ml-1"
-                                    data-icon="ant-design:download-outlined"></span></button>
+                            <button class="px-5 py-3 rounded-md bg-red text-white hover:bg-[#a11c19] mr-5 transition">
+                                <a href="#contact">Send Me Message
+                                    <span class="iconify inline-block text-xl -mt-1 ml-1"
+                                        data-icon="charm:mail"></span></a></button>
+                            <!-- <button
+                                class="px-5 py-3 rounded-md border-[1px] border-white hover:bg-white hover:text-black transition">Download
+                                CV <span class="iconify inline-block text-xl -mt-1 ml-1"
+                                    data-icon="ant-design:download-outlined"></span></button> -->
                         </div>
                     </div>
                 </div>
@@ -76,22 +81,17 @@
 
 
         <!-- About Section -->
-        <section class="bg-white relative z-10">
-            <div class="w-[80vw] mx-auto py-14 flex items-center justify-between">
+        <section class="bg-white relative z-10" id="about">
+            <div class="w-[80vw] mx-auto py-28 flex items-center justify-between">
                 <div class="w-2/3">
-                    <div class="mb-3">
-                        <h1 class="font-krona text-5xl">ABOUT</h1>
+                    <div class="mb-8">
+                        <h1 class="font-krona text-5xl">HELLO THERE</h1>
                     </div>
-                    <div class="font-montserrat text-lg">
-                        <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam
-                            dolorum
-                            reprehenderit,
-                            optio,
-                            sed repellendus nesciunt magnam deserunt ut aut quis aperiam odit temporibus ducimus
-                            accusantium
-                            debitis. Voluptatem, suscipit commodi modi nulla tenetur maxime fugit? Eos adipisci
-                            similique
-                            quisquam
+                    <div class="font-montserrat text-xl">
+                        <p class="mb-8">Hey, how you doing? I'm Dandi Sabilli Izzulhaq but you can call me Dan. I'm a
+                            front end web developer currently based in Jakarta, Indonesia. I love making websites using
+                            HTML, CSS and Javascript. But for now, I'm focusing on making single page application using
+                            React JS.
                         </p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis harum accusantium
                             accusamus
@@ -103,45 +103,51 @@
                 </div>
                 <div class="mx-auto">
                     <figure class="w-fit mx-auto">
-                        <img src="/assets/img/profile-photo.png" alt="profile-photo" class="h-[350px]">
+                        <img src="/assets/img/blobs-bg-picture.svg" alt="profile-photo" class="h-[350px]">
                     </figure>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="bg-white">
-            <div class="py-14 text-white bg-black">
-                <div class="w-[80vw] mx-auto mb-16">
+        <section class="bg-white" id="projects">
+            <div class="py-20 text-white bg-black">
+                <div class="w-[80vw] mx-auto mb-32">
                     <h1 class="font-krona text-5xl text-right">PROJECTS</h1>
                 </div>
-                <div class="grid grid-cols-2 font-montserrat">
+                <div class="grid grid-cols-2 font-montserrat text-2xl text-center">
                     <div class="threed-container">
-                        <div class="display"></div>
+                        <div id="investx">
+                            <figure>
+                                <img src="assets/img/Homepage-investx.png" alt="investx website">
+                            </figure>
+                        </div>
                     </div>
-                    <div class="">
-                        <h2 class="text-8xl font-cabin">InvestX</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita maxime
-                            laudantium iusto eveniet nam aliquid nobis hic sit earum amet animi odio sed, et
-                            consequuntur modi inventore similique. Quasi?</p>
+                    <div class="flex flex-col items-center justify-center gap-2 w-[500px] mx-auto">
+                        <h2 class="project-title investx">InvestX</h2>
+                        <p>An equity crowdfunding website</p>
                     </div>
-                    <div>
-                        <h2 class="text-8xl font-cabin">InvestX</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita maxime
-                            laudantium iusto eveniet nam aliquid nobis hic sit earum amet animi odio sed, et
-                            consequuntur modi inventore similique. Quasi?</p>
-                    </div>
-                    <div class="threed-container">
-                        <div class="display"></div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-[500px] mx-auto">
+                        <h2 class="project-title creaven">CREAVEN</h2>
+                        <p>Helps you find the best laptop by using machine learning algorithm</p>
                     </div>
                     <div class="threed-container">
-                        <div class="display"></div>
+                        <div id="creaven">
+                            <figure>
+                                <img src="assets/img/Dashboard-creaven.png" alt="creaven website">
+                            </figure>
+                        </div>
                     </div>
-                    <div>
-                        <h2 class="text-8xl font-cabin">InvestX</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cumque cupiditate
-                            exercitationem porro, magnam error, deleniti quasi ipsum vel dicta, expedita blanditiis!
-                            Laborum vero ullam tenetur earum velit ipsa illum.</p>
+                    <div class="threed-container">
+                        <div id="weather-info">
+                            <figure>
+                                <img src="assets/img/Dashboard-weather.png" alt="weather-info website">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-[500px] mx-auto">
+                        <h2 class="project-title text-8xl weather-info">Weather Info</h2>
+                        <p>Your one stop weather information</p>
                     </div>
                 </div>
             </div>
@@ -149,25 +155,29 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="bg-white relative z-10 py-8">
+        <section class="bg-white relative z-10 py-8" id="contact">
             <div class="py-14 w-[40vw] mx-auto">
-                <h1 class="font-krona text-5xl text-center mb-8">CONTACT</h1>
-                <p class="font-montserrat text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-                    possimus illum
-                    sed veritatis. Repellendus ratione rem, architecto deleniti facere eius?</p>
-                <form autocomplete="false">
+                <h1 class="font-krona text-5xl text-center mb-8">CONTACT ME</h1>
+                <p class="font-montserrat text-2xl text-center">If you want to contact me for a project or just want to
+                    say hi. Feel
+                    free to send me an email at <a href="mailto:dandiabil24@gmail.com"
+                        class="font-semibold">dandiabil24@gmail.com</a> or use
+                    the form below.</p>
+                <!-- <form autocomplete="off" id="form"> -->
+                <form autocomplete="off" id="form" action="https://formsubmit.co/dandiabil24@gmail.com" method="POST">
                     <div class="flex gap-4 mt-5">
                         <input type="text"
                             class="px-3 py-2 bg-[#E0E9EC] border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 w-full rounded-md sm:text-sm focus:ring-1"
-                            placeholder="Your name">
-                        <input type="text"
+                            placeholder="Your name" id="name" name="name">
+                        <input type="email" required
                             class="px-3 py-2 bg-[#E0E9EC] border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 w-full rounded-md sm:text-sm focus:ring-1"
-                            placeholder="Your email">
+                            placeholder="Your email" id="email" name="email">
                     </div>
                     <textarea rows="10"
                         class="mt-3 px-3 py-2 bg-[#E0E9EC] w-full block rounded-md border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-sm focus:ring-1 mb-3"
-                        placeholder="Your message"></textarea>
-                    <button class="px-5 py-3 rounded-md bg-red text-white mr-5 border-[1px] border-red font-cabin">Send
+                        placeholder="Your message" id="message" name="message"></textarea>
+                    <button
+                        class="px-5 py-3 rounded-md bg-red text-white mr-5 hover:bg-[#a11c19] transition font-cabin">Send
                         Message
                         <span class="iconify inline-block text-xl -mt-1 ml-1"
                             data-icon="carbon:send-filled"></span></button>
@@ -178,23 +188,25 @@
         <!-- Footer Section -->
         <section class="h-24 flex items-center font-cabin">
             <div class="w-[80vw] mx-auto text-white flex items-center justify-between">
-                <h1 class="opacity-75">&copy; 2022 - Your friendly neighborhood coder.</h1>
+                <h1 class="opacity-75">&copy; 2022 - Dandi Izzulhaq.</h1>
                 <a href="#top" class="underline">Back to top</a>
                 <div>
-                    <button class="h-12 w-12 rounded-full bg-red text-white mr-5">
+                    <button class="h-12 w-12 rounded-full border-2 border-red hover:bg-red transition text-white mr-5">
                         <a href="https://twitter.com/dandiabil" target="_blank" rel="noreferrer"><span
                                 class="iconify text-xl mx-auto" data-icon="akar-icons:twitter-fill"></span></a></button>
-                    <button class="h-12 w-12 rounded-full bg-red text-white mr-5">
+                    <button class="h-12 w-12 rounded-full border-2 border-red hover:bg-red transition text-white mr-5">
                         <a href="https://linkedin.com/in/dandiabil" target="_blank" rel="noreferrer"><span
                                 class="iconify text-xl mx-auto"
                                 data-icon="akar-icons:linkedin-box-fill"></span></a></button>
-                    <button class="h-12 w-12 rounded-full bg-red text-white mr-5">
+                    <button class="h-12 w-12 rounded-full border-2 border-red hover:bg-red transition text-white mr-5">
                         <a href="https://github.com/dandiabil" target="_blank" rel="noreferrer"><span
                                 class="iconify text-xl mx-auto" data-icon="akar-icons:github-fill"></span></a> </button>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
+
+    <script src="/index.js"></script>
 </body>
 
 </html>
