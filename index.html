@@ -9,6 +9,10 @@
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400;1,600&family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap"
         rel="stylesheet">
@@ -22,7 +26,7 @@
         <!-- Header Website -->
         <header class="block md:fixed w-full md:z-[999] md:transition-all h-[15vh]" id="header">
             <div class="flex items-center justify-between h-full w-[80vw] mx-auto mb-5">
-                <figure><a href="#top">
+                <figure><a href="https://dandiabil.netlify.app">
                         <img src="/assets/img/Dan-Izzulhaq-Logo.svg" alt="portfolio logo"></a>
                 </figure>
                 <nav class="font-cabin text-xl text-white">
@@ -52,7 +56,7 @@
 
         <!-- Hero -->
         <section class="relative z-10 md:pt-16">
-            <div class="w-[80vw] mx-auto bg-black">
+            <div class="w-fit mx-auto bg-black">
                 <div class="mb-8 md:w-[700px] mx-auto text-center text-grey md:h-[350px] font-krona">
                     <img src="/assets/img/circle-bg.svg" class="absolute z-[5] w-1/2 h-auto lg:w-fit">
                     <div class="block md:flex flex-col justify-evenly items-center h-full pt-12 z-10 relative">
@@ -61,29 +65,22 @@
                         <h1 class="hero3 text-2xl sm:text-4xl md:text-6xl">CODER.</h1>
                     </div>
                 </div>
-                <div
-                    class="banner lg:flex lg:text-left text-white p-6 border-grey border-2 bg-black relative z-10 sm:block text-center">
-                    <div class="lg:w-1/2 w-full">
-                        <div class="font-krona text-3xl md:text-6xl mb-5">
-                            <h1>DANDI</h1>
+                <div class="banner text-white p-6 bg-black relative z-10 sm:block text-center">
+                    <div class="w-full">
+                        <div class="font-krona text-3xl md:text-6xl mb-5 md:flex flex-col justify-between">
+                            <h1 class="md:text-8xl">DANDI</h1>
                             <h1 class="text-red">IZZULHAQ</h1>
                         </div>
-                        <div class="font-cabin text-lg md:text-2xl italic mb-3">
-                            <h2>Front End Developer</h2>
-                        </div>
                     </div>
-                    <div class="flex justify-between flex-col w-full lg:w-1/2">
-                        <div class="font-montserrat mb-3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mauris ligula dui volutpat
-                                auctor
-                                consequat est lacus volutpat. Vitae pellentesque nibh ligula ultrices lorem tristique
-                                vitae
-                                mattis dictum. Etiam eu quam senectus nunc massa habitasse.</p>
+                    <div class="flex justify-between flex-col w-full">
+                        <div class="font-montserrat mb-3 md:text-2xl">
+                            <p>I Like To Build Websites.</p>
                         </div>
                         <div class="font-cabin font-semibold">
-                            <button class="px-5 py-3 rounded-md bg-red text-white hover:bg-[#a11c19] mr-5 transition">
-                                <a href="#contact">Send Me Message
-                                    <span class="iconify inline-block text-xl -mt-1 ml-1"
+                            <button
+                                class="md:px-5 md:py-3 p-2 rounded-md bg-red text-white hover:bg-[#a11c19] mr-5 transition">
+                                <a href="#contact">Contact Me
+                                    <span class="iconify inline-block text-lg md:text-xl -mt-1 ml-1"
                                         data-icon="charm:mail"></span></a></button>
                             <!-- <button
                                 class="px-5 py-3 rounded-md border-[1px] border-white hover:bg-white hover:text-black transition">Download
@@ -100,30 +97,24 @@
         <!-- About Section -->
         <section class="bg-white relative z-10" id="about">
             <div class="w-[80vw] mx-auto py-28 md:flex items-center justify-between sm:block">
-                <figure class="w-fit mx-auto md:hidden block mb-12">
-                    <img src="/assets/img/blobs-bg-picture.svg" alt="profile-photo" class="h-[350px]">
-                </figure>
                 <div class="md:w-2/3 sm:w-full">
                     <div class="mb-8">
                         <h1 class="font-krona text-5xl">HELLO THERE</h1>
                     </div>
-                    <div class="font-montserrat text-xl">
-                        <p class="mb-8">Hey, how you doing? I'm Dandi Sabilli Izzulhaq but you can call me Dan. I'm a
-                            front end web developer currently based in Jakarta, Indonesia. I love making websites using
-                            HTML, CSS and Javascript. But for now, I'm focusing on making single page application using
-                            React JS.
+                    <figure class="w-fit mx-auto md:hidden block mb-12">
+                        <img src="/assets/img/profile-photo.jpg" alt="profile-photo" class="h-[350px] rounded-xl">
+                    </figure>
+                    <div class="font-montserrat text-2xl text-justify">
+                        <p class="mb-8">My name is Dandi Sabilli Izzulhaq and I'm a
+                            front end web developer from Jakarta, Indonesia. I love making websites using
+                            HTML, CSS and Javascript. But for now, I'm focusing on building websites using
+                            a Javascript library called React with Tailwind CSS or SASS.
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis harum accusantium
-                            accusamus
-                            officiis vitae, iure molestias. Fugiat, nulla sint?
-                            sed repellendus nesciunt magnam deserunt ut aut quis aperiam odit temporibus ducimus
-                            accusantium
-                            debitis.</p>
                     </div>
                 </div>
-                <div class="mx-auto hidden md:block">
-                    <figure class="w-fit mx-auto">
-                        <img src="/assets/img/blobs-bg-picture.svg" alt="profile-photo" class="h-[350px]">
+                <div class="hidden md:block">
+                    <figure class="w-fit">
+                        <img src="/assets/img/profile-photo.jpg" alt="profile-photo" class="h-[350px] rounded-xl">
                     </figure>
                 </div>
             </div>
@@ -173,11 +164,11 @@
                         class="md:flex flex-col items-center justify-center gap-2 lg:w-[500px] mx-auto px-6 py-12 md:p-0">
                         <h2 class="project-title text-4xl font-semibold lg:text-8xl font-cabin weather-info">Weather
                             Info</h2>
-                        <p>Your one stop weather information</p>
+                        <p>A website that gives you the information of the latest weather condition in certain area</p>
                     </div>
                 </div>
             </div>
-            <img src="/assets/img/section-divider.svg" alt="" class="w-full">
+            <img src="/assets/img/section-divider.svg" alt="" class="w-full relative z-[1] bottom-2">
         </section>
 
         <!-- Contact Section -->
