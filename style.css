@@ -6,11 +6,23 @@
   background-repeat: no-repeat;
 }
 
-.about__skillset{
+.skillset{
   background-image: url('/assets/background/bg-skillset.svg');
   background-color: #2E2E2E;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.about__title::after, .skillset__title::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 412px;
+  height: 5px;
+  background-color: #EDF2F4;
+  top: 0px;
+  left: -200px;
+  margin: 52px 0;
 }
 
 #contact{

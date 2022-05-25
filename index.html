@@ -18,9 +18,15 @@
 
 <body>
     <div class="hero overflow-y-hidden">
+        <!-- <figure class="absolute -top-12 -left-8 z-[1] w-full md:-top-60 md:-left-36">
+            <img src="/assets/vector/rectangle.png" alt="" class="w-56">
+        </figure>
+        <figure class="absolute z-[1] w-full">
+            <img src="/assets/vector/Circle.svg" alt="" class="right-0">
+        </figure> -->
 
         <!-- Header Website -->
-        <header class="w-full h-[15vh]" id="header">
+        <header class=" w-full h-[15vh] relative z-10" id="header">
             <div class="flex items-center justify-between h-full w-[80vw] md:max-w-6xl mx-auto">
                 <figure><a href="#top">
                         <img src="/assets/img/Dan-Izzulhaq-Logo.svg" alt="portfolio logo" class="w-36"></a>
@@ -72,7 +78,7 @@
         </nav>
 
         <!-- Hero -->
-        <section class="py-24 md:py-32 lg:py-24">
+        <section class="py-24 md:py-32 lg:py-24 relative z-10">
             <div class="w-[70vw] md:max-w-6xl mx-auto text-white flex flex-col justify-center">
                 <h1
                     class="text-3xl md:text-6xl lg:text-8xl mb-3 md:mb-8 font-krona w-44 sm:w-96 md:w-2/3 lg:w-full leading-normal md:leading-normal lg:leading-tight">
@@ -80,6 +86,9 @@
                 </h1>
                 <h3 class="font-semibold w-44 md:w-auto md:text-3xl lg:text-4xl font-montserrat">I Build
                     Websites</h3>
+                <figure class="relative z-[1] w-full">
+                    <img src="/assets/vector/shapes.png" alt="" class="relative md:left-[80%] md:bottom-28">
+                </figure>
             </div>
         </section>
 
@@ -104,16 +113,20 @@
 
     <!-- About Section -->
     <section class="bg-[#2e2e2e] text-white" id="about">
+        <figure class="relative z-[1] md:max-w-6xl w-[80vw] mx-auto top-32">
+            <img src="/assets/vector/Circles.png" alt=""
+                class="relative left-[30%] sm:left-[70%] md:left-[80%] lg:left-[90%]">
+        </figure>
         <div class="w-[80vw] md:max-w-6xl mx-auto py-44 md:flex items-center justify-between sm:block">
             <div class="md:flex items-start justify-between">
-                <div class="mb-8 lg:mt-2">
-                    <h1 class="font-krona text-2xl lg:text-3xl">ABOUT ME</h1>
+                <div class="mb-8">
+                    <h1 class="font-krona text-2xl lg:text-3xl about__title">ABOUT ME</h1>
                     <figure class="w-fit mx-auto">
                         <img src="/assets/img/Dan-Izzulhaq-Logo" alt="profile-photo" class="h-[350px]">
                     </figure>
                 </div>
-                <div class="font-montserrat lg:text-3xl md:w-[60%]">
-                    <p class="mb-8">My name is Dandi Sabilli Izzulhaq and I'm a front end developer from
+                <div class="font-montserrat lg:text-3xl md:w-[60%] text-justify">
+                    <p class="mb-16">My name is Dandi Sabilli Izzulhaq and I'm a front end developer from
                         Jakarta,
                         Indonesia. I love building websites using HTML, CSS and Javascript. But now, I bulid website
                         mainly using React and Tailwind.
@@ -123,15 +136,16 @@
             </div>
         </div>
     </section>
-    <section class="about__skillset bg-[#2e2e2e] text-white">
+    <section class="skillset bg-[#2e2e2e] text-white">
         <div class="w-[80vw] md:max-w-6xl mx-auto py-16 md:flex items-center justify-between sm:block">
             <div>
                 <div class="mb-6 md:mb-16">
-                    <h1 class="font-krona text-2xl lg:text-3xl">TECH SKILLSETS</h1>
+                    <h1 class="font-krona text-2xl lg:text-3xl skillset__title">TECH SKILLSETS</h1>
                 </div>
 
                 <div class="font-montserrat">
-                    <p class="mb-14 text-xl md:text-3xl">These are the skillsets that I currently have. I will always
+                    <p class="mb-14 md:mb-28 text-xl md:text-3xl">These are the skillsets that I currently have. I will
+                        always
                         trying to keep
                         updated by the latest technologies.
                     </p>
@@ -174,9 +188,11 @@
     <!-- Projects Section -->
     <section class="bg-white text-black" id="projects">
         <div class="w-[80vw] md:max-w-6xl mx-auto py-20 font-montserrat">
-            <div class="mb-12">
-                <h1 class="font-krona text-2xl lg:text-3xl mb-3 md:mb-16 md:text-center">PROJECTS</h1>
-                <p class="text-xl md:text-3xl md:text-center">Below are some of my work that I've had worked on.</p>
+            <div class="mb-12 md:mb-20">
+                <h1 class="font-krona text-2xl lg:text-3xl mb-3 md:mb-9 md:text-center">PROJECTS</h1>
+                <p class="text-xl md:text-3xl md:text-center md:w-[640px] mx-auto">Below are some of my work that I've
+                    had
+                    worked on.</p>
             </div>
             <div class="block md:grid grid-cols-2 font-montserrat gap-12">
 
@@ -249,38 +265,11 @@
     <section class="h-24 flex items-center font-cabin bg-black">
         <div class="w-[80vw] md:max-w-6xl mx-auto text-white flex items-center justify-center">
             <h1 class="">&copy; 2022 - Dandi Izzulhaq</h1>
-            <!-- <div class="mt-2">
-                <button
-                    class="md:h-12 md:w-12 w-5 h-5 rounded-full md:border-2 md:border-red md:hover:bg-red transition text-white mr-5">
-                    <a href="https://twitter.com/dandiabil" target="_blank" rel="noreferrer"><span
-                            class="iconify md:text-xl mx-auto" data-icon="akar-icons:twitter-fill"></span></a></button>
-                <button
-                    class="md:h-12 md:w-12 w-5 h-5 rounded-full md:border-2 md:border-red md:hover:bg-red transition text-white mr-5">
-                    <a href="https://linkedin.com/in/dandiabil" target="_blank" rel="noreferrer"><span
-                            class="iconify md:text-xl mx-auto"
-                            data-icon="akar-icons:linkedin-box-fill"></span></a></button>
-                
-            </div> -->
         </div>
     </section>
 
 
     <script>
-        //Shrink Header
-        function shrinkHeader(e) {
-            if (window.innerWidth < 768) return;
-            const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 200,
-                headerEl = document.getElementById("header");
-
-            if (distanceY > shrinkOn) {
-                headerEl.classList.add("shrink");
-            } else {
-                headerEl.classList.remove("shrink");
-            }
-        }
-
-        // window.addEventListener("scroll", shrinkHeader);
 
         //Close Burger
         function hamburgerMenu(e) {
