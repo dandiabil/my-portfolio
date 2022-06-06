@@ -1,0 +1,37 @@
+.hero {
+  background-image: url("/assets/background/bg-hero.png");
+  background-color: #2e2e2e;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.skillset{
+  background-image: url('/assets/background/bg-skillset.svg');
+  background-color: #2E2E2E;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about__title::after, .skillset__title::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 412px;
+  height: 5px;
+  background-color: #EDF2F4;
+  top: 0px;
+  left: -200px;
+  margin: 52px 0;
+}
+
+#contact{
+  background-image: url('/assets/background/bg-contact.svg');
+  background-color: #E65F5C;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
