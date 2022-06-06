@@ -11,7 +11,7 @@ const Project = ({ id, src, desc, title, href, techUsed }) => {
         </figure>
       </div>
 
-      <div className="mb-12">
+      <div className="mb-12 md:flex flex-col justify-evenly">
         <div
           className={`project-title mb-3 text-2xl lg:text-5xl font-cabin font-semibold ${title}`}
         >
@@ -28,7 +28,7 @@ const Project = ({ id, src, desc, title, href, techUsed }) => {
             ))}
           </div>
         </div>
-        <button className="px-5 py-2 rounded-md bg-red text-white">
+        <button className="px-5 py-2 rounded-md bg-red text-white w-28">
           <a href={href} target="_blank" rel="noreferrer">
             <Icon
               className="iconify mr-2 mb-1 inline-block"

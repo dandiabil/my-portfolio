@@ -60,19 +60,20 @@ const About = () => {
 
               <Skills
                 title="HTML/CSS/JS"
-                desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        quibusdam eos repudiandae eum unde?"
+                desc="Building websites using semantic HTML and also using plain CSS with BEM naming conventions. Although, now I also like to use CSS framework like Tailwind CSS or preprocessor like SASS. For JavaScript, I like to use React as a front end library to build single-page applications."
+                techUsed={["HTML5", "SASS", "BEM", "Tailwind CSS", "React"]}
               />
               <Skills
                 title="Version Control"
-                desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        quibusdam eos repudiandae eum unde?"
+                desc="I used Git as version control system to keep track of my project's code progress and then published it to public repository like GitHub for collaborating."
+                techUsed={["Git", "GitHub"]}
               />
-              <Skills
+              {/* <Skills
                 title="Design Tools"
                 desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error
         quibusdam eos repudiandae eum unde?"
-              />
+                techUsed={["Figma"]}
+              /> */}
               {/* <Skills
                 title="HTML/CSS/JS"
                 desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error

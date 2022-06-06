@@ -40,7 +40,7 @@ const Projects = () => {
           <Project
             id="weather-info"
             title="Weather Info"
-            desc="Your one stop weather information"
+            desc="Weather Info was one of my mini projects. This website used React as front end library and using Tailwind CSS. Has few features like checking weather in certain area and also the weather forecast, and there is weather map where you can look the weather information in other part of the world."
             src="assets/img/Dashboard-weather.png"
             href="https://github.com/dandiabil/weather-info"
             techUsed={["React", "Tailwind CSS"]}
