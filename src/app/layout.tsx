@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'My App',
+  title: 'Front End Developer | Dandi Izzulhaq',
   description: 'My App is a...',
 };
 
@@ -14,8 +14,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <title>Front End Developer | Dandi Izzulhaq</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -46,7 +44,9 @@ export default function RootLayout({
       </head>
 
       <body>
-        <div id="root">{children}</div>
+        <div className="scroll-smooth" id="root">
+          {children}
+        </div>
       </body>
     </html>
   );

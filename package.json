@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dandiabil/dandiabil.github.io#readme",
   "devDependencies": {
     "@iconify/react": "^3.2.2",
+    "@netlify/plugin-nextjs": "^5.15.13",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "26.1.2",
     "@types/react": "^18.0.9",

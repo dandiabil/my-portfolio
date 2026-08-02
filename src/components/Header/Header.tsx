@@ -1,7 +1,6 @@
 'use client';
 
 import { Icon } from '@iconify/react';
-// import { MouseEvent } from 'react';
 
 const Header = () => {
   //Close Burger
@@ -19,7 +18,7 @@ const Header = () => {
   return (
     <>
       {/* <!-- Header Website --> */}
-      <header className=" w-full h-[15vh] relative z-10" id="header">
+      <header className=" w-full h-[15vh] fixed z-999 top-0" id="header">
         <div className="flex items-center justify-between h-full w-[80vw] md:max-w-6xl mx-auto">
           <figure>
             <a href="#top">
