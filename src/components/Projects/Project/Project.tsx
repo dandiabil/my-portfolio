@@ -1,8 +1,16 @@
-import React from "react";
-import { Icon } from "@iconify/react";
-import TechCard from "./TechCard/TechCard";
+import { Icon } from '@iconify/react';
+import TechCard from './TechCard/TechCard';
 
-const Project = ({ id, src, desc, title, href, techUsed }) => {
+type ProjectProps = {
+  id: string;
+  src: string;
+  desc: string;
+  title: string;
+  href: string;
+  techUsed: string[];
+};
+
+const Project = ({ id, src, desc, title, href, techUsed }: ProjectProps) => {
   return (
     <>
       <div id={id} className="mb-6 max-w-md mx-auto">
@@ -24,7 +32,7 @@ const Project = ({ id, src, desc, title, href, techUsed }) => {
           <h2 className="font-bold mb-2 lg:text-xl">Tech Used</h2>
           <div className="flex gap-2">
             {techUsed.map((item) => (
-              <TechCard tech={item} />
+              <TechCard key={item} tech={item} />
             ))}
           </div>
         </div>

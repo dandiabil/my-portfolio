@@ -1,12 +1,11 @@
-import React from "react";
-import Skills from "./Skills/Skills";
+import Skills from './Skills/Skills';
 
 const About = () => {
   return (
     /* <!-- About Section --> */
     <>
       <section className="bg-[#2e2e2e] text-white" id="about">
-        <figure className="relative z-[1] md:max-w-6xl w-[80vw] mx-auto top-32">
+        <figure className="relative z-1 md:max-w-6xl w-[80vw] mx-auto top-32">
           <img
             src="/assets/vector/Circles.png"
             alt=""
@@ -23,7 +22,7 @@ const About = () => {
                 <img
                   src="/assets/img/profile2.jpg"
                   alt="profile-photo"
-                  className="max-h-[350px] rounded-xl"
+                  className="max-h-87.5 rounded-xl"
                 />
               </figure>
             </div>
@@ -61,12 +60,12 @@ const About = () => {
               <Skills
                 title="HTML/CSS/JS"
                 desc="Building websites using semantic HTML and also using plain CSS with BEM naming conventions. Although, now I also like to use CSS framework like Tailwind CSS or preprocessor like SASS. For JavaScript, I like to use React as a front end library to build single-page applications."
-                techUsed={["HTML5", "SASS", "BEM", "Tailwind CSS", "React"]}
+                techUsed={['HTML5', 'SASS', 'BEM', 'Tailwind CSS', 'React']}
               />
               <Skills
                 title="Version Control"
                 desc="I used Git as version control system to keep track of my project's code progress and then published it to public repository like GitHub for collaborating."
-                techUsed={["Git", "GitHub"]}
+                techUsed={['Git', 'GitHub']}
               />
               {/* <Skills
                 title="Design Tools"

@@ -1,23 +1,24 @@
-import React, { useState } from "react";
-import { Icon } from "@iconify/react";
+'use client';
+
+import { Icon } from '@iconify/react';
 
 const Header = () => {
   //Close Burger
-  function hamburgerMenu(e) {
-    const menu = document.getElementById("menu");
-    menu.style = "";
-    if (e.target.getAttribute("name") === "burger") {
-      menu.style.transform = "translate(-450px, 0)";
-      menu.style.zIndex = "999";
-    } else {
-      menu.style.transform = "translate(200px, 0)";
-    }
-  }
+  // function hamburgerMenu(e: MouseEvent<SVGSVGElement, MouseEvent>) {
+  //   const menu = document.getElementById('menu');
+  //   menu?.style = '';
+  //   if (e.target.getAttribute('name') === 'burger') {
+  //     menu.style.transform = 'translate(-450px, 0)';
+  //     menu.style.zIndex = '999';
+  //   } else {
+  //     menu.style.transform = 'translate(200px, 0)';
+  //   }
+  // }
 
   return (
     <>
       {/* <!-- Header Website --> */}
-      <header className=" w-full h-[15vh] relative z-10" id="header">
+      <header className=" w-full h-[15vh] fixed z-999 top-0" id="header">
         <div className="flex items-center justify-between h-full w-[80vw] md:max-w-6xl mx-auto">
           <figure>
             <a href="#top">
@@ -41,9 +42,9 @@ const Header = () => {
               </li>
             </ul>
             <Icon
-              icon={"charm:menu-hamburger"}
+              icon={'charm:menu-hamburger'}
               className="iconify md:hidden cursor-pointer text-2xl"
-              onClick={(e) => hamburgerMenu(e)}
+              // onClick={(e) => hamburgerMenu(e)}
               name="burger"
             />
           </nav>
@@ -52,14 +53,14 @@ const Header = () => {
 
       {/* <!-- Burger Menu --> */}
       <nav
-        className="transition-transform fixed md:hidden top-0 -right-[450px] -z-[999] bg-[#C8524F] opacity-95 text-white h-[100vh] w-[100vw]"
+        className="transition-transform fixed md:hidden top-0 right-112 z-[-999] bg-[#C8524F] opacity-95 text-white h-screen w-screen"
         id="menu"
       >
         <div className="relative right-8">
           <Icon
             className="iconify cursor-pointer text-3xl h-[15vh] mr-0 ml-auto"
             icon="charm:cross"
-            onClick={(e) => hamburgerMenu(e)}
+            // onClick={(e) => hamburgerMenu(e)}
             name="close"
           />
         </div>

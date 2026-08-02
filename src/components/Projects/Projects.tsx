@@ -1,6 +1,6 @@
-import React from "react";
-import { Icon } from "@iconify/react";
-import Project from "./Project/Project";
+'use client';
+
+import Project from './Project/Project';
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
           <h1 className="font-krona text-2xl lg:text-3xl mb-3 md:mb-9 md:text-center">
             PROJECTS
           </h1>
-          <p className="text-xl md:text-3xl md:text-center md:w-[640px] mx-auto">
+          <p className="text-xl md:text-3xl md:text-center md:w-160 mx-auto">
             Below are some of my work that I've had worked on.
           </p>
         </div>
@@ -24,7 +24,7 @@ const Projects = () => {
           Sagara Technology from September 2021 to December 2021."
             src="assets/img/Homepage-investx.png"
             href="https://github.com/dandiabil"
-            techUsed={["React", "Redux", "SCSS"]}
+            techUsed={['React', 'Redux', 'SCSS']}
           />
           <Project
             id="creaven"
@@ -35,7 +35,7 @@ const Projects = () => {
             learning algorithm."
             src="assets/img/Dashboard-creaven.png"
             href="https://github.com/Fikrilogic/Prediction-Laptop-ML"
-            techUsed={["React", "Redux", "Material UI"]}
+            techUsed={['React', 'Redux', 'Material UI']}
           />
           <Project
             id="weather-info"
@@ -43,7 +43,7 @@ const Projects = () => {
             desc="Weather Info was one of my mini projects. This website used React as front end library and using Tailwind CSS. Has few features like checking weather in certain area and also the weather forecast, and there is weather map where you can look the weather information in other part of the world."
             src="assets/img/Dashboard-weather.png"
             href="https://github.com/dandiabil/weather-info"
-            techUsed={["React", "Tailwind CSS"]}
+            techUsed={['React', 'Tailwind CSS']}
           />
         </div>
       </div>
