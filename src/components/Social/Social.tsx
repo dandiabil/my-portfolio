@@ -1,5 +1,6 @@
-import React from "react";
-import { Icon } from "@iconify/react";
+'use client';
+
+import { Icon } from '@iconify/react';
 
 const Social = () => {
   return (

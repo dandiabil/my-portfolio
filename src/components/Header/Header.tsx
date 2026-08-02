@@ -1,18 +1,20 @@
-import React, { useState } from "react";
-import { Icon } from "@iconify/react";
+'use client';
+
+import { Icon } from '@iconify/react';
+// import { MouseEvent } from 'react';
 
 const Header = () => {
   //Close Burger
-  function hamburgerMenu(e) {
-    const menu = document.getElementById("menu");
-    menu.style = "";
-    if (e.target.getAttribute("name") === "burger") {
-      menu.style.transform = "translate(-450px, 0)";
-      menu.style.zIndex = "999";
-    } else {
-      menu.style.transform = "translate(200px, 0)";
-    }
-  }
+  // function hamburgerMenu(e: MouseEvent<SVGSVGElement, MouseEvent>) {
+  //   const menu = document.getElementById('menu');
+  //   menu?.style = '';
+  //   if (e.target.getAttribute('name') === 'burger') {
+  //     menu.style.transform = 'translate(-450px, 0)';
+  //     menu.style.zIndex = '999';
+  //   } else {
+  //     menu.style.transform = 'translate(200px, 0)';
+  //   }
+  // }
 
   return (
     <>
@@ -41,9 +43,9 @@ const Header = () => {
               </li>
             </ul>
             <Icon
-              icon={"charm:menu-hamburger"}
+              icon={'charm:menu-hamburger'}
               className="iconify md:hidden cursor-pointer text-2xl"
-              onClick={(e) => hamburgerMenu(e)}
+              // onClick={(e) => hamburgerMenu(e)}
               name="burger"
             />
           </nav>
@@ -59,7 +61,7 @@ const Header = () => {
           <Icon
             className="iconify cursor-pointer text-3xl h-[15vh] mr-0 ml-auto"
             icon="charm:cross"
-            onClick={(e) => hamburgerMenu(e)}
+            // onClick={(e) => hamburgerMenu(e)}
             name="close"
           />
         </div>

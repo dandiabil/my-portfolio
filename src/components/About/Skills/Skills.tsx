@@ -1,7 +1,12 @@
-import React from "react";
-import TechCard from "../../Projects/Project/TechCard/TechCard";
+import TechCard from '../../Projects/Project/TechCard/TechCard';
 
-const Skills = ({ title, desc, techUsed }) => {
+type SkillsProps = {
+  title: string;
+  desc: string;
+  techUsed: string[];
+};
+
+const Skills = ({ title, desc, techUsed }: SkillsProps) => {
   return (
     <div className="mb-14 md:flex justify-between items-start">
       <div className="font-cabin text-2xl font-semibold mb-4">
@@ -13,6 +18,7 @@ const Skills = ({ title, desc, techUsed }) => {
           {techUsed &&
             techUsed.map((item) => (
               <TechCard
+                key={item}
                 tech={item}
                 bgColor="bg-red"
                 bgHover="hover:bg-[#e34946]"
