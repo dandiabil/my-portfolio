@@ -52,7 +52,7 @@ const Header = () => {
 
       {/* <!-- Burger Menu --> */}
       <nav
-        className="transition-transform fixed md:hidden top-0 -right-[450px] -z-[999] bg-[#C8524F] opacity-95 text-white h-[100vh] w-[100vw]"
+        className="transition-transform fixed md:hidden top-0 right-112 z-[-999] bg-[#C8524F] opacity-95 text-white h-screen w-screen"
         id="menu"
       >
         <div className="relative right-8">

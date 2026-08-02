@@ -11,7 +11,7 @@ const Hero = () => {
         <h3 className="font-semibold w-44 md:w-auto md:text-3xl lg:text-4xl font-montserrat">
           I Build Websites
         </h3>
-        <figure className="relative z-[1] w-full">
+        <figure className="relative z-1 w-full">
           <img
             src="/assets/vector/shapes.png"
             alt=""

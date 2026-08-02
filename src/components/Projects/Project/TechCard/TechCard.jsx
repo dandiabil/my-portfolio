@@ -8,7 +8,7 @@ const TechCard = ({
 }) => {
   return (
     <div
-      className={`${bgColor} rounded-sm py-1 px-2 ${bgHover} transition cursor-default`}
+      className={`${bgColor} rounded-xs py-1 px-2 ${bgHover} transition cursor-default`}
     >
       <p className={`text-sm ${textColor} font-semibold`}>{tech}</p>
     </div>

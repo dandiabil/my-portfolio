@@ -14,7 +14,7 @@ const Contact = () => {
         </p>
         <a
           href="mailto:dandiabil24@gmail.com"
-          className="font-semibold text-xl md:text-5xl mb-16 block w-fit mx-auto hover:bg-white hover:text-red p-2 transition rounded border-[1px] border-white"
+          className="font-semibold text-xl md:text-5xl mb-16 block w-fit mx-auto hover:bg-white hover:text-red p-2 transition rounded-sm border border-white"
         >
           dandiabil24@gmail.com
         </a>
